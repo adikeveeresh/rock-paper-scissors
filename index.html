@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Rock Paper scissors</title>
+</head>
+
+<body>
+    <h1>Let's play Rock, Paper, Scissors!</h1>
+    <main>
+        <details class="rules">
+            <summary>Rules to the Game!!!</summary>
+            <p>You will be playing against the computer.</p>
+            <p>You can choose one among Rock Paper and Scissors. </p>
+            <p>The one who will get three points will win.</p>
+            <ul>Here are the rules to get points in the game
+                <li>Rock beats Scissors</li>
+                <li>Scissors beat Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <p>If the player and computer choose the same option(Ex:rock and rock),then no one will get point.</p>
+        </details>
+
+        <div class="scoreboard">
+            <p id="pscore">Player Score: 0</p>
+            <p id="cscore">Computer Score: 0</p>
+        </div>
+        <div class="option">
+            Choose an Option
+            <div class="items">
+                <img class="choice" id="rock" src="./img/rock.jpeg" alt="">
+                <img class="choice" id="paper" src="./img/paper.jpeg" alt="">
+                <img class="choice" id="scissors" src="./img/scissors.jpeg" alt="">
+            </div>
+
+        </div>
+        <div class="results">
+            <p  id="result1" >computer choosen</p>
+            <h3 id="result">start the game!!</h3>
+            
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
