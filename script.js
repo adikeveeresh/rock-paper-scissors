@@ -27,10 +27,14 @@ const showWinner = (userWin,compChoice) =>{
             
             resultText.innerText="You Win !!";
             resultText.style.backgroundColor="green";
-            userScore=0;
-            compScore=0;
-            playerScore.innerText=`Player Score: ${userScore}`;
-            computerScore.innerText=`Computer Score: ${compScore}`
+            setTimeout(()=>{
+                userScore=0;
+                compScore=0;
+                playerScore.innerText=`Player Score: ${userScore}`;
+                computerScore.innerText=`Computer Score: ${compScore}`;
+                resultText.innerText="start the game!!";
+                resultText.style.backgroundColor="rgb(10, 10, 34)";
+            },2000);
         }
         
     }
@@ -44,10 +48,14 @@ const showWinner = (userWin,compChoice) =>{
             
             resultText.innerText="You Lose, try again";
             resultText.style.backgroundColor="red";
-            userScore=0;
-            compScore=0;
-            playerScore.innerText=`Player Score: ${userScore}`;
-            computerScore.innerText=`Computer Score: ${compScore}`
+            setTimeout(()=>{
+                userScore=0;
+                compScore=0;
+                playerScore.innerText=`Player Score: ${userScore}`;
+                computerScore.innerText=`Computer Score: ${compScore}`;
+                resultText.innerText="start the game!!";
+                resultText.style.backgroundColor="rgb(10, 10, 34)";
+            },2000);
         }
     }
 }
@@ -79,3 +87,4 @@ choices.forEach((choice)=> {
         playGame(userChoice);
     });
 });
+
